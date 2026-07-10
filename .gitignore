@@ -1,6 +1,6 @@
 # Build output
-nahid_shell
-*.o
+/nahid_shell
+/build/
 
 # Editor/OS cruft
 *.swp

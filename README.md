@@ -81,8 +81,17 @@ earlier ones:
 
 ## Project layout
 
-- `main.c` — entry point and the REPL loop
-- `builtins.c` — builtin command implementations and dispatch
-- `helpers.c` — small utility functions
-- `nahid_shell.h` — shared header (includes, prototypes)
-- `Makefile` — build rules
+```
+.
+├── Makefile
+├── README.md
+├── include/
+│   └── nahid_shell.h   — shared header (includes, prototypes)
+└── src/
+    ├── main.c          — entry point and the REPL loop
+    ├── builtins.c      — builtin command implementations and dispatch
+    └── helpers.c       — small utility functions
+```
+
+`make` compiles everything under `src/` into `build/` (gitignored) and
+links the `nahid_shell` binary at the repo root.
