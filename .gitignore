@@ -1,0 +1,8 @@
+# Build output
+nahid_shell
+*.o
+
+# Editor/OS cruft
+*.swp
+.DS_Store
+CLAUDE.md
