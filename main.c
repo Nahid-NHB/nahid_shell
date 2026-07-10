@@ -75,7 +75,7 @@ void shell_loop(char **env){
         }
 
         char **argv = tokenize_line(line);
-        if(argv[0] != NULL){
+        if(argv[0] != NULL && !try_builtin(argv)){
             execute_command(argv);
         }
         free(argv);

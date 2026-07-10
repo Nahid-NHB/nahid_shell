@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic -std=c11 -g
-SRCS = main.c helpers.c
+SRCS = main.c helpers.c builtins.c
 OBJS = $(SRCS:.c=.o)
 TARGET = nahid_shell
 
